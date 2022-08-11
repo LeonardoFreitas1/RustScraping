@@ -1,5 +1,5 @@
 [package]
-name = "RustScraping"
+name = "rust_scraping"
 version = "0.1.0"
 edition = "2021"
 
