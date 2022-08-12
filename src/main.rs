@@ -10,11 +10,11 @@ fn main() {
         .unwrap()
         .text()
         .unwrap();
-    
+
     let document = Html::parse_document(&response);
     let title_selector = Selector::parse("title").unwrap();
     let title = document.select(&title_selector).next().unwrap();
     let text = title.text().collect::<Vec<_>>().join("");
 
-    println!("title: {}", text);
+    println!("title: {}", text.trim());
 }
